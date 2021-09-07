@@ -7,7 +7,6 @@ const webpackDevMiddleware = require("webpack-dev-middleware");
 const webpackConfig = require("./webpack.config.js");
 const compiler = webpack(webpackConfig);
 
-app.use(express.static('public'));
 app.use(express.json()); 
 app.use(express.urlencoded({ extended : true})) 
 
