@@ -6,7 +6,7 @@ module.exports = {
     entry: ['./src/javascripts/index.js','./src/scss/base.scss'],
     output: {
         filename: "bundle.js",
-        path: path.resolve("public/"),
+        path: path.resolve("../server/public/"),
         publicPath: '/'
     },
     module : {
@@ -30,7 +30,7 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: ['babel-loader']    
+                use: { loader: "babel-loader" }
             },
         ],
     },

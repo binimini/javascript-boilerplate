@@ -1,40 +1,40 @@
 {
-  "name": "javascript-p2-airbnb",
+  "name": "javascript-boilerplate",
   "version": "1.0.0",
-  "description": "웹풀스택 프로젝트#2 - airbnb",
+  "description": "웹풀스택 프로젝트 boilerplate",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "nodemon ./server/app.js",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/binimini/javascript-p2-airbnb.git"
+    "url": "git+https://github.com/binimini/javascript-boilerplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/binimini/javascript-p2-airbnb/issues"
+    "url": "https://github.com/binimini/javascript-boilerplate/issues"
   },
-  "homepage": "https://github.com/binimini/javascript-p2-airbnb#readme",
-  "dependencies": {},
+  "homepage": "https://github.com/binimini/javascript-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.2"
+  },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.4",
     "babel-loader": "^8.2.2",
     "css-loader": "^6.2.0",
-    "express": "^4.17.1",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.2.2",
     "sass": "^1.39.0",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0",
-    "webpack-dev-middleware": "^5.0.0",
     "webpack-node-externals": "^3.0.0"
   }
 }
